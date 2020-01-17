@@ -85,6 +85,7 @@ class ArrayCircleQueue{
         //让rear后移,这里必须考虑取模
         rear=(rear+1)%maxSize;
     }
+
     //取出数据
     public int getQueue(){
         if (isEmpty()){
