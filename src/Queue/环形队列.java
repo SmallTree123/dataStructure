@@ -102,16 +102,22 @@ class ArrayCircleQueue{
             System.out.println("队列空的");
             return;
         }
-        for (int i=0;i<arr.length;i++){
-            System.out.printf("arr[%d]=%d\n",i,arr[i]);
+        for (int i=front;i<front+size();i++){
+            System.out.printf("arr[%d]=%d\n",i%maxSize,arr[i%maxSize]);
         }
     }
+
+    //求出当前队列的有效个数
+    public int size(){
+        return (rear+maxSize-front)%maxSize;
+    }
+
     //显示队列的头数据
     public int headQueue(){
         if (isEmpty()){
             System.out.println("队列空的");
             throw new RuntimeException("队列空的");
         }
-        return arr[front+1];
+        return arr[front];
     }
 }
