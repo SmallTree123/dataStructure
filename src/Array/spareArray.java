@@ -1,4 +1,6 @@
-public class 稀疏数组 {
+package Array;
+
+public class spareArray {
 
     public static void main(String[] args) {
         //创建一个原始的二位数组11  11
