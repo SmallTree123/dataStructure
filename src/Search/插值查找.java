@@ -1,9 +1,12 @@
 package Search;
 
 import sun.net.idn.Punycode;
-
+/*
+查找有规律的数据的时候比二分法好
+ */
 public class 插值查找 {
     public static void main(String[] args) {
+
         int max=10000;
         int arr[]=new int[max];
         for (int i=0;i<max;i++){
