@@ -1,7 +1,9 @@
 package Search;
 
 import java.util.ArrayList;
-
+/*
+    适合没有规律的数据
+ */
 public class 二分查找 {
     public static void main(String[] args) {
         //前提必须是是一个有序序列
